@@ -11,7 +11,7 @@ public class GasSimulator extends PApplet{
 	
 	@Override
 	public void setup() {
-		Gas gasA = new Gas(5, 1, 1000, this);
+		Gas gasA = new Gas(4, 1, 1000, this);
 		container = new GasContainer(this, gasA);
 	}
 	

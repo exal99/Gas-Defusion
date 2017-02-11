@@ -12,8 +12,7 @@ public class Gas {
 		for (int i = 0; i < numParticles; i++) {
 			PVector vel = PVector.random2D();
 			float speed = (parrent.randomGaussian() * std) + mean;
-			vel.setMag(speed);
-			System.out.println(speed);
+			vel.mult(speed);
 			particles[i] = new GasParticle(vel, new PVector(parrent.width/2, parrent.height/2), parrent);
 		}
 	}
