@@ -43,17 +43,21 @@ public class GasParticle {
 		return pos;
 	}
 	
+	public float getSize() {
+		return r;
+	}
+	
 	public void checkBoundaryCollision() {
-	    if (pos.x > parrent.width-r) {
-	      pos.x = parrent.width-r;
+	    if (pos.x > GasSimulator.GAS_CONTAINER_WIDTH-r) {
+	      pos.x = GasSimulator.GAS_CONTAINER_WIDTH-r;
 	      vel.x *= -1;
 	    } 
 	    else if (pos.x < r) {
 	      pos.x = r;
 	      vel.x *= -1;
 	    } 
-	    if (pos.y > parrent.height-r) {
-	      pos.y = parrent.height-r;
+	    if (pos.y > GasSimulator.GAS_CONTAINER_HEIGHT-r) {
+	      pos.y = GasSimulator.GAS_CONTAINER_HEIGHT-r;
 	      vel.y *= -1;
 	    } 
 	    else if (pos.y < r) {
