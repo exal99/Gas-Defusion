@@ -16,7 +16,7 @@ public class GasSimulator extends PApplet{
 	
 	@Override
 	public void setup() {
-		frame.setResizable(true);
+		surface.setResizable(true);
 		Gas gasA = new Gas(2, 2.4f, 100, color(0,50,255), new PVector(550, height/2), this);
 		Gas gasB = new Gas(32, 3, 100, color(255, 0, 0), new PVector(250, height/2), this);
 		container = new GasContainer(this, gasA, gasB);
